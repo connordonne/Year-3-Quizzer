@@ -1,0 +1,10 @@
+[
+    {
+        "question": "What makes software intrinsically difficult?",
+        "answer": "Complex: Many interconnected parts. Intangible: Hard to visualise or physically interact with. Malleable: Easy to change, but changes can introduce errors. Scale: Difficult to manage as it grows. Evolutionary: Constantly needs updates and changes."
+    },
+    {
+        "question": "Why do software projects fail?",
+        "answer": "Built for the wrong reason (misunderstood goals). Built as the wrong system (doesn’t meet user needs). Built in the wrong way (inefficient processes or technology)."
+    }
+]
