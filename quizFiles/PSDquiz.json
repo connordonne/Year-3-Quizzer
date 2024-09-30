@@ -50,5 +50,9 @@
     {
         "question": "What happens in sprint review meetings?",
         "answer": "Deliver and demo the new software version from the sprint, Summarise progress vs planned work, Highlight additional work completed and missed features, Explain reasons for deviations, Identify new features for future sprints."
+    },
+    {
+        "question": "What is plotted in a burn-down chart?",
+        "answer": "Total outstanding work vs sprint time."
     }
 ]
