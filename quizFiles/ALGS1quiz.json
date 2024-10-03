@@ -1,0 +1,110 @@
+[
+    {
+        "question": "What is the claim regarding the time complexity of any comparison-based sorting algorithm?",
+        "answer": "No comparison-based sorting algorithm can have a time complexity better than O(n log n)."
+    },
+    {
+        "question": "How can a comparison-based sorting algorithm be represented to analyze its time complexity?",
+        "answer": "It can be represented as a decision tree, where each non-leaf node represents a comparison between two elements, and paths branch depending on the result of the comparison."
+    },
+    {
+        "question": "What does the number of leaf nodes in the decision tree represent?",
+        "answer": "The number of leaf nodes represents the number of possible orderings of the elements being sorted, which is at least n!."
+    },
+    {
+        "question": "What is the worst-case complexity of a comparison-based sorting algorithm based on the height of the decision tree?",
+        "answer": "The worst-case complexity is O(h), where h is the height of the decision tree."
+    },
+    {
+        "question": "What is the maximum number of leaf nodes a binary tree of height h can have?",
+        "answer": "A binary tree of height h can have at most 2^(h+1) - 1 leaf nodes."
+    },
+    {
+        "question": "How do we relate the number of leaf nodes to n! in the decision tree?",
+        "answer": "Since there are at least n! leaf nodes and a binary tree can have at most 2^(h+1) - 1 leaf nodes, the relationship is n! ≤ 2^(h+1) - 1."
+    },
+    {
+        "question": "How do we derive the height of the decision tree using logarithms?",
+        "answer": "Taking the log₂ of both sides of the inequality n! ≤ 2^(h+1), we get h + 1 ≥ log₂(n!)."
+    },
+    {
+        "question": "How does Stirling’s approximation help in simplifying log₂(n!)?",
+        "answer": "Stirling's approximation gives us that log₂(n!) > (n/2) log₂(n/2), which helps to simplify the bound on the height of the decision tree."
+    },
+    {
+        "question": "What is the final complexity derived for comparison-based sorting algorithms?",
+        "answer": "The complexity is at least O(n log n), as derived from the properties of the decision tree."
+    },
+    {
+        "question": "What is the main challenge that Radix Sort addresses compared to comparison-based sorting algorithms?",
+        "answer": "No comparison-based sorting algorithm can do better than O(n log n) in the worst case, but Radix Sort achieves O(n) complexity by exploiting the structure of the items being sorted."
+    },
+    {
+        "question": "What type of items does Radix Sort work best with?",
+        "answer": "Radix Sort works with items that can be treated as bit-sequences of a fixed length."
+    },
+    {
+        "question": "What are the key constants in Radix Sorting?",
+        "answer": "The bit-sequence length (m) and the chosen factor (b), which divides the bit-sequence into sections, are constants in Radix Sorting."
+    },
+    {
+        "question": "How many iterations does Radix Sort perform?",
+        "answer": "Radix Sort performs m/b iterations, where m is the length of the bit-sequence and b is the factor that divides the sequence."
+    },
+    {
+        "question": "How does Radix Sort distribute items during each iteration?",
+        "answer": "In each iteration, items are distributed into 2^b buckets based on the bits in positions (b×i)-1 to b×(i-1)."
+    },
+    {
+        "question": "What happens after each iteration in Radix Sort?",
+        "answer": "After each iteration, the buckets are concatenated to form a new sequence, which is used for the next iteration."
+    },
+    {
+        "question": "How does Radix Sort ensure correctness (i.e., maintaining relative order)?",
+        "answer": "If two items x and y differ in their relevant bits during any iteration, x is placed in an earlier bucket than y. In all later iterations, x and y go in the same bucket, preserving their relative order."
+    },
+    {
+        "question": "What is the time complexity of Radix Sort?",
+        "answer": "The time complexity of Radix Sort is O(n), where m and b are constants, and n is the number of items."
+    },
+    {
+        "question": "What is the time-space trade-off in Radix Sort?",
+        "answer": "Increasing the value of b reduces the number of iterations, making the algorithm faster. However, a larger value of b requires more space, as an array of size 2^b is needed for the buckets."
+    },
+    {
+        "question": "What type of data structure are binary search trees?",
+        "answer": "Binary search trees are comparison-based data structures."
+    },
+    {
+        "question": "How are tries related to binary search trees?",
+        "answer": "Tries are to binary trees as Radix Sort is to comparison-based sorting. They handle sequences of symbols instead of comparisons."
+    },
+    {
+        "question": "How is the key value of a stored item interpreted in a trie?",
+        "answer": "The key value is interpreted as a sequence of bits, characters, or other symbols."
+    },
+    {
+        "question": "What determines the branch taken during a trie search at level i?",
+        "answer": "The branch is determined by the i-th element of the key value, such as the i-th bit or i-th character."
+    },
+    {
+        "question": "How is the key value of an item represented in a trie?",
+        "answer": "The key value is represented by tracing a path from the root to a node in the trie."
+    },
+    {
+        "question": "What is the complexity of trie operations with respect to the number of items?",
+        "answer": "The complexity of trie operations is almost independent of the number of items."
+    },
+    {
+        "question": "What is trie operation complexity essentially dependent on?",
+        "answer": "Trie operation complexity is essentially linear in the length of the key or string."
+    },
+    {
+        "question": "What are two possible implementations of a trie?",
+        "answer": "A trie can be implemented using an array of pointers to represent the children of each node, or using a linked list to represent the children."
+    },
+    {
+        "question": "What trade-off exists in trie implementations?",
+        "answer": "There is a time/space trade-off between different trie implementations, such as arrays and linked lists."
+    }
+]
