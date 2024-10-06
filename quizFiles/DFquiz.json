@@ -1,0 +1,130 @@
+[
+    {
+        "question": "What is the fundamental data type in this course?",
+        "answer": "Multidimensional numerical arrays (ndarrays)."
+    },
+    {
+        "question": "Why are numerical arrays considered powerful and useful?",
+        "answer": "They allow efficient, elegant operations for data like images, sounds, and videos."
+    },
+    {
+        "question": "How are media types represented as arrays?",
+        "answer": "Image: 2D array of brightness values. Sound: 1D array of sound levels. Video: 3D array (x, y, time)."
+    },
+    {
+        "question": "What are examples of array operations on media?",
+        "answer": "Brightening videos, mixing sounds, cropping videos, rotating 3D models."
+    },
+    {
+        "question": "How is scientific data represented?",
+        "answer": "As numerical arrays, making operations like data comparison easy."
+    },
+    {
+        "question": "How are 3D graphics handled?",
+        "answer": "Manipulating arrays of vertices (points) for geometry operations."
+    },
+    {
+        "question": "How does abstraction help with array operations?",
+        "answer": "It allows operations on entire arrays, extending single-number operations to all elements simultaneously, making the code more readable and easier to write."
+    },
+    {
+        "question": "What is the benefit of mathematical abstractions in arrays?",
+        "answer": "Linear algebra provides tools for working with 1D (vectors) and 2D (matrices) arrays, solving complex problems more easily."
+    },
+    {
+        "question": "Why are numerical arrays efficient?",
+        "answer": "They are memory-efficient and enable fast computations, making them ideal for big number-focused tasks like weather simulation, image processing, and machine learning."
+    },
+    {
+        "question": "How is deep learning related to arrays?",
+        "answer": "Deep learning relies on representing data as arrays and performing computations on all elements simultaneously."
+    },
+    {
+        "question": "What is vectorisation in computing?",
+        "answer": "Vectorised computation refers to performing operations on arrays simultaneously."
+    },
+    {
+        "question": "How do GPUs handle array processing?",
+        "answer": "GPUs excel at processing numerical arrays quickly but are slower with other data structures. Efficient GPU code is based on array operations."
+    },
+    {
+        "question": "What is the difference between a vector, matrix, and tensor?",
+        "answer": "Vector: 1D array (e.g., [1, 2, 3]). Matrix: 2D array (e.g., 3x3 grid). Tensor: nD array (3 or more dimensions)."
+    },
+    {
+        "question": "What are axes in arrays?",
+        "answer": "Axes refer to the dimensions of an array (e.g., a matrix has 2 axes: rows and columns)."
+    },
+    {
+        "question": "Why avoid explicit iteration in arrays?",
+        "answer": "It simplifies code and makes it faster, leveraging hardware acceleration."
+    },
+    {
+        "question": "How are vectors represented and used in arrays?",
+        "answer": "1D arrays represent vectors, used for modelling physical systems, machine learning, and 3D rendering."
+    },
+    {
+        "question": "How are matrices used in arrays?",
+        "answer": "2D arrays represent matrices, which are used for linear algebra, defining functions like coordinate transformations."
+    },
+    {
+        "question": "How are ndarrays different from lists?",
+        "answer": "Fixed size and type. Hold only numbers. Multidimensional and rectangular. Cannot be resized but are mutable."
+    },
+    {
+        "question": "Why do arrays require specified types?",
+        "answer": "Arrays are raw blocks of memory, making them compact and efficient. Specifying types allows fast operations."
+    },
+    {
+        "question": "What characterizes an array?",
+        "answer": "Shape: Its dimensions (e.g., 32×8). Dtype: The type of its elements (e.g., float64)."
+    },
+    {
+        "question": "How are images and sounds represented as arrays?",
+        "answer": "They are arrays where shape corresponds to image resolution or sound duration."
+    },
+    {
+        "question": "What is the difference between slicing and indexing?",
+        "answer": "Slicing: Selects a rectangular subset and preserves dimensions. Indexing: Reduces the rank by selecting elements along a specific dimension."
+    },
+    {
+        "question": "What is transposition in arrays?",
+        "answer": "Transposition swaps rows and columns in a 2D array (x.T) and reverses the order of dimensions in arrays with more than two dimensions."
+    },
+    {
+        "question": "How are arrays joined or stacked?",
+        "answer": "Concatenate: Joins along an existing dimension. Stack: Stacks along a new dimension."
+    },
+    {
+        "question": "What is tiling in arrays?",
+        "answer": "Tiling repeats arrays along specified dimensions using np.tile()."
+    },
+    {
+        "question": "How do you change the volume of a sound using arrays?",
+        "answer": "You can scale the array values to change the volume or multiply each element by a different value to create effects like fading."
+    },
+    {
+        "question": "How do you mix sounds using arrays?",
+        "answer": "Mixing sounds involves adding their arrays together, possibly adjusting the gain."
+    },
+    {
+        "question": "What is broadcasting in arrays?",
+        "answer": "Broadcasting allows operations between arrays of different shapes by implicitly expanding dimensions or repeating values as needed to match shapes."
+    },
+    {
+        "question": "What are the rules for broadcasting?",
+        "answer": "Singleton dimensions (1) can be expanded to match other dimensions. If one array has fewer dimensions, ones are added to its shape until they match the other array’s shape."
+    },
+    {
+        "question": "What is reduction in arrays?",
+        "answer": "Reduction applies an operation (e.g., + or *) repeatedly to collapse an array into a single value or a smaller array."
+    },
+    {
+        "question": "What is accumulation (scan) in arrays?",
+        "answer": "Accumulation (e.g., np.cumsum()) generates an array of cumulative sums or products, preserving intermediate results instead of collapsing them into a single value."
+    },
+    {
+        "question": "What is argsorting?",
+        "answer": "Argsorting (np.argsort()) returns the indices that would sort the array, allowing reordering or cross-referencing."
+    }
+]
