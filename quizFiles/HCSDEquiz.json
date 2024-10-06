@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the definition of consistency (in the context of HCI)?",
+        "answer": "Using the same design elements across an application to avoid user confusion."
+    },
+    {
+        "question": "Why is consistency important?",
+        "answer": "Users rely on visual and interaction cues to navigate applications without guessing. Inconsistent interfaces lead to confusion and frustration, forcing users to adapt, guess, or make costly tech support calls. Consistent design makes applications easier to learn and use, increasing satisfaction and usability."
+    },
+    {
+        "question": "What is the importance of consistency for users?",
+        "answer": "Consistency helps users understand and interact with the application efficiently. Inconsistent design elements can cause confusion, making the interface harder to learn."
+    },
+    {
+        "question": "What are the types of consistency?",
+        "answer": "Internal: Design remains the same within the application, across different screens and features. External: Design aligns with other applications the user may be familiar with."
+    },
+    {
+        "question": "How do you establish consistency?",
+        "answer": "Set expectations with familiar elements. User expectations are influenced by what they’ve seen in other apps and past experiences. User-centred design (contextual inquiry, prototype testing) can help define consistent patterns."
+    },
+    {
+        "question": "What is good application design?",
+        "answer": "Successful designs meet business goals and user expectations. Consistency reduces cognitive load ('Don’t make me think' principle)."
+    },
+    {
+        "question": "How do you have consistency in elements?",
+        "answer": "Layout: Place similar elements in the same location on every screen. Typography: Apply a standard set of fonts and sizes to indicate importance. Colour: Use a defined colour palette to emphasize hierarchy and group related items. Imagery: Use a unified style for charts, logos, and icons. Icons should be easily recognizable or accompanied by text."
+    },
+    {
+        "question": "What is visual hierarchy?",
+        "answer": "Visual hierarchy refers to the perception of the relative importance of objects on a screen, guiding users on what to focus on and how to interact with it."
+    },
+    {
+        "question": "What affects visual hierarchy in application design?",
+        "answer": "Factors include position, size, colour, interface control type (e.g., button vs link), and relationships between elements. Consistency is key to effective design."
+    },
+    {
+        "question": "How is hierarchy applied in design?",
+        "answer": "By decisions on where to place elements, how large they should be, what colours to use, and how to represent their behaviour based on importance."
+    },
+    {
+        "question": "What happens if there is no hierarchy?",
+        "answer": "Without hierarchy, objects attract the eye equally, leading to confusion."
+    },
+    {
+        "question": "How does hierarchy relate to rank systems?",
+        "answer": "Just like ranks in military or martial arts, interface elements need a visual ranking system to signify their importance and role."
+    },
+    {
+        "question": "What are the characteristics of hierarchy?",
+        "answer": "Elements with more visual weight or prominence appear more important. Contrast, position, and proximity are key factors."
+    },
+    {
+        "question": "How does contrast influence hierarchy?",
+        "answer": "Contrast helps make something stand out by creating visible differences between elements."
+    },
+    {
+        "question": "How does position affect hierarchy?",
+        "answer": "Placement on the screen, proximity to other elements, and grouping can all influence visual prominence and perception of hierarchy."
+    },
+    {
+        "question": "How do size, colour, and ornament affect hierarchy?",
+        "answer": "Larger elements appear more important. Darker and warmer colours (red, yellow) have more visual weight. Ornament and finish can indicate importance but should be used sparingly."
+    },
+    {
+        "question": "What is layout in visual usability?",
+        "answer": "Layout involves positioning elements on a screen to create a structure that people can understand, supporting use, behaviour, and aesthetics in the design process."
+    },
+    {
+        "question": "What are the meta-principles of layout?",
+        "answer": "Consistency, hierarchy, and personality affect layout, and layout, in turn, reinforces them. Successful layouts clarify information and the app's personality."
+    },
+    {
+        "question": "What is the language of layout?",
+        "answer": "Basic layout terms include alignment, proximity, grid, scale, and white space. Specific terms for screens include screen size and templates, including responsiveness."
+    },
+    {
+        "question": "How does screen size affect layout?",
+        "answer": "The screen acts as a frame for content, and layout principles need to consider different screen sizes and formats to ensure consistency and usability."
+    },
+    {
+        "question": "How does position influence layout?",
+        "answer": "Positioning elements creates visual relationships that help users make sense of content. However, improper alignment can lead to confusion (e.g., USDA’s SuperTracker)."
+    },
+    {
+        "question": "What is white space, and why is it important?",
+        "answer": "White space provides a resting point for the eye and helps to organize elements. It makes screens more approachable and helps create clarity in dense layouts."
+    },
+    {
+        "question": "How do proximity, scale, and alignment affect layout?",
+        "answer": "Proximity shows relationships between elements. Scale shows importance. Alignment organizes layouts and establishes relationships between elements."
+    },
+    {
+        "question": "What role does a grid play in layout?",
+        "answer": "A grid provides an underlying structure for placement, alignment, and size. It helps guide the eye and organize content. Grids are optional, but alignment is crucial."
+    },
+    {
+        "question": "What are templates, and how are they used?",
+        "answer": "Templates provide consistent margins and placement rules for types of content. They enforce internal consistency but may limit design creativity."
+    }
+]
