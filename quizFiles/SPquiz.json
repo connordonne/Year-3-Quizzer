@@ -18,5 +18,81 @@
     {
         "question": "What is the linker's role?",
         "answer": "Combines object files into one executable. Ensures all functions are correctly linked to their machine code."
+    },
+    {
+        "question": "What is the main function in C?",
+        "answer": "The entry point of every C program. Returns 0 on success."
+    },
+    {
+        "question": "How is the main function written?",
+        "answer": "Two forms: int main() and int main(int argc, char* argv[]) for handling command line arguments."
+    },
+    {
+        "question": "What does printf do?",
+        "answer": "Outputs formatted text. Specifiers like %d, %s substitute values."
+    },
+    {
+        "question": "How are variables defined in C?",
+        "answer": "Declared with data types (e.g. int x = 4;). C is statically typed."
+    },
+    {
+        "question": "Why do we need data types?",
+        "answer": "They give meaning to bits and define how values are stored and interpreted."
+    },
+    {
+        "question": "What role do data types play?",
+        "answer": "Data types ensure meaningful operations; compiler checks for type errors."
+    },
+    {
+        "question": "How are variables stored in memory?",
+        "answer": "Stored at fixed locations. Data types affect memory usage."
+    },
+    {
+        "question": "What are the typical sizes of data types?",
+        "answer": "Common sizes: char = 1 byte, int = 4 bytes, float = 4 bytes."
+    },
+    {
+        "question": "What are Boolean values in C?",
+        "answer": "0 is false, non-zero is true. Use <stdbool.h> for true/false macros."
+    },
+    {
+        "question": "What is lexical scoping?",
+        "answer": "Variables are unique within a scope. Inner scopes can shadow outer scopes."
+    },
+    {
+        "question": "What is the lifetime of a variable?",
+        "answer": "Depends on allocation: 1) automatic (local), 2) static (global), or 3) allocated (programmer chooses)."
+    },
+    {
+        "question": "What is stack-based memory management?",
+        "answer": "Stack memory is used for local variables, managed automatically."
+    },
+    {
+        "question": "What is the heap?",
+        "answer": "The heap is memory manually managed by the programmer."
+    },
+    {
+        "question": "How are arrays handled in C?",
+        "answer": "Arrays store elements of the same type, fixed size on stack, dynamic on heap."
+    },
+    {
+        "question": "What are structs?",
+        "answer": "Collections of variables of different types, accessed like class members."
+    },
+    {
+        "question": "How are strings represented in C?",
+        "answer": "Arrays of characters, terminated by \\0. Printed with %s."
+    },
+    {
+        "question": "How are functions defined in C?",
+        "answer": "Return type, name, parameters, body. Same as Java :)"
+    },
+    {
+        "question": "What is call-by-value?",
+        "answer": "Arguments are copied when passed to functions. Changes don’t affect originals."
+    },
+    {
+        "question": "How are structs and arrays passed to functions?",
+        "answer": "Structs by value; arrays by reference (first element’s address)."
     }
 ]
