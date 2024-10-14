@@ -106,5 +106,297 @@
     {
         "question": "What trade-off exists in trie implementations?",
         "answer": "There is a time/space trade-off between different trie implementations, such as arrays and linked lists."
+    },
+    {
+        "question": "What does an undirected graph consist of?",
+        "answer": "An undirected graph consists of a finite set of vertices (V) and a set of edges (E), where each edge is a subset of V of size 2."
+    },
+    {
+        "question": "How are vertices and edges represented in a graph?",
+        "answer": "Vertices are represented by points, and edges are represented by lines joining relevant pairs of points."
+    },
+    {
+        "question": "What does it mean for two vertices to be adjacent?",
+        "answer": "Two vertices are adjacent if there is an edge connecting them, meaning the edge is an element of the edge set E."
+    },
+    {
+        "question": "What is a path in a graph?",
+        "answer": "A path is a sequence of vertices connected by edges. For example, a path of length 4 could be a ➝ x ➝ b ➝ y ➝ c."
+    },
+    {
+        "question": "What is a cycle in a graph?",
+        "answer": "A cycle is a path that starts and ends at the same vertex. For example, a ➝ x ➝ b ➝ y ➝ a is a cycle of length 4."
+    },
+    {
+        "question": "What is the degree of a vertex?",
+        "answer": "The degree of a vertex is the number of edges that are incident to it."
+    },
+    {
+        "question": "What is a connected graph?",
+        "answer": "A connected graph is one where every pair of vertices is joined by a path."
+    },
+    {
+        "question": "What is a tree in graph theory?",
+        "answer": "A tree is a connected, acyclic graph. A tree with n vertices has n-1 edges."
+    },
+    {
+        "question": "What is a forest in graph theory?",
+        "answer": "A forest is a collection of disjoint trees, meaning it is an acyclic graph whose components are trees."
+    },
+    {
+        "question": "What is a bipartite graph?",
+        "answer": "A bipartite graph is a graph where the vertices are divided into two disjoint sets, U and W, and every edge connects a vertex in U to a vertex in W."
+    },
+    {
+        "question": "What is a complete graph or clique?",
+        "answer": "A complete graph, or clique, is a graph where every pair of vertices is connected by an edge. For example, K6 is the clique on 6 vertices."
+    },
+    {
+        "question": "What is a directed graph (digraph)?",
+        "answer": "A directed graph (digraph) consists of a set of vertices (V) and a set of ordered edges (E), where each edge is an ordered pair of vertices."
+    },
+    {
+        "question": "How are edges represented in a directed graph?",
+        "answer": "Edges in a directed graph are represented as arrows indicating the direction from one vertex to another."
+    },
+    {
+        "question": "What is the in-degree and out-degree of a vertex in a digraph?",
+        "answer": "In-degree is the number of edges directed towards a vertex, while out-degree is the number of edges directed away from a vertex."
+    },
+    {
+        "question": "What is a path in a directed graph?",
+        "answer": "A path in a directed graph follows the direction of the edges. For example, u ➝ w ➝ x is a path."
+    },
+    {
+        "question": "What is a cycle in a directed graph?",
+        "answer": "A cycle in a directed graph is a sequence of vertices where the edges follow the direction and the sequence ends at the starting vertex. For example, w ➝ y ➝ w is a cycle."
+    },
+    {
+        "question": "How is an adjacency matrix structured for an undirected graph?",
+        "answer": "An adjacency matrix for an undirected graph has one row and one column for each vertex. The entry in row i, column j is 1 if the ith and jth vertices are adjacent, and 0 otherwise."
+    },
+    {
+        "question": "What does an adjacency list for an undirected graph consist of?",
+        "answer": "An adjacency list for an undirected graph consists of one list for each vertex. The list for vertex i contains an entry for vertex j if vertices i and j are adjacent."
+    },
+    {
+        "question": "What does the adjacency matrix represent for a graph with vertices u, v, w, x, y, z?",
+        "answer": "The adjacency matrix is a |V| x |V| array where each entry represents whether there is an edge between two vertices. For example, for vertex u and vertex v, the entry would be 1 if they are adjacent."
+    },
+    {
+        "question": "What is the structure of the adjacency list for an undirected graph with vertices u, v, w, x, y, z?",
+        "answer": "The adjacency list for the graph is structured such that each vertex has a list of adjacent vertices. For example, u's list contains v and x if u is adjacent to v and x."
+    },
+    {
+        "question": "How is an adjacency matrix structured for a directed graph?",
+        "answer": "An adjacency matrix for a directed graph has one row and one column for each vertex. The entry in row i, column j is 1 if there is an edge from vertex i to vertex j, and 0 otherwise."
+    },
+    {
+        "question": "What does an adjacency list for a directed graph consist of?",
+        "answer": "An adjacency list for a directed graph consists of one list for each vertex. The list for vertex i contains vertex j if there is an edge from i to j."
+    },
+    {
+        "question": "How is the adjacency matrix represented for a directed graph with vertices u, v, w, x, y, z?",
+        "answer": "The adjacency matrix for the directed graph shows if there is an edge from one vertex to another. For example, the entry in row u, column v is 1 if there is an edge from u to v."
+    },
+    {
+        "question": "What is the structure of the adjacency list for a directed graph with vertices u, v, w, x, y, z?",
+        "answer": "The adjacency list for a directed graph includes each vertex and a list of the vertices to which it has edges. For example, vertex u's list might contain v and w if there are edges from u to v and w."
+    },
+    {
+        "question": "What is the purpose of graph search and traversal algorithms?",
+        "answer": "Graph search and traversal algorithms provide a systematic way to explore a graph starting from some vertex."
+    },
+    {
+        "question": "How is a web crawler related to graph traversal?",
+        "answer": "A web crawler collects data by traversing a directed graph where vertices represent hypertext documents, and an edge (u, v) exists if document u contains a hyperlink to document v."
+    },
+    {
+        "question": "What is the time complexity of an efficient traversal?",
+        "answer": "An efficient traversal explores the graph in O(|V| + |E|) time, where |V| is the number of vertices and |E| is the number of edges."
+    },
+    {
+        "question": "What is the process of Depth-First Search (DFS)?",
+        "answer": "DFS follows a path of unvisited vertices from the starting vertex until the path can be extended no further, then backtracks to find other unvisited vertices, continuing until all vertices are visited."
+    },
+    {
+        "question": "What type of structure does DFS produce?",
+        "answer": "DFS produces a depth-first spanning tree (or forest), which is a tree composed of all the vertices and some (or all) of the edges of the graph."
+    },
+    {
+        "question": "What is the time complexity of DFS using adjacency lists?",
+        "answer": "The time complexity of DFS using adjacency lists is O(n + m), where n is the number of vertices and m is the number of edges."
+    },
+    {
+        "question": "What is the time complexity of DFS when using an adjacency matrix?",
+        "answer": "When using an adjacency matrix, DFS has a time complexity of O(n^2) because every entry of the matrix must be checked."
+    },
+    {
+        "question": "What are some applications of DFS?",
+        "answer": "DFS can be used to determine if a graph is connected, identify the connected components, check if the graph contains a cycle, and determine if the graph is bipartite."
+    },
+    {
+        "question": "What is the process of Breadth-First Search (BFS)?",
+        "answer": "BFS starts at a vertex and visits all its adjacent vertices before moving on to the next level. Vertices are processed in the order they are visited."
+    },
+    {
+        "question": "What type of structure does BFS produce?",
+        "answer": "BFS produces a breadth-first spanning tree (or forest), which is a tree composed of all the vertices and some (or all) of the edges of the graph."
+    },
+    {
+        "question": "What is the time complexity of BFS using adjacency lists?",
+        "answer": "The time complexity of BFS using adjacency lists is O(n + m), where n is the number of vertices and m is the number of edges."
+    },
+    {
+        "question": "What is the time complexity of BFS when using an adjacency matrix?",
+        "answer": "When using an adjacency matrix, BFS has a time complexity of O(n^2), similar to DFS."
+    },
+    {
+        "question": "How can BFS be used to find the distance between two vertices?",
+        "answer": "BFS can find the shortest distance between two vertices by starting at one vertex, assigning it a distance of 0, and updating the distance of each new vertex as 1 plus the distance to its predecessor in the BFS tree."
+    },
+    {
+        "question": "What is a weighted graph?",
+        "answer": "A weighted graph is a graph in which each edge has an integer weight, represented by wt(e) > 0."
+    },
+    {
+        "question": "What does the weight in a weighted graph represent?",
+        "answer": "The weight may represent length, cost, capacity, etc."
+    },
+    {
+        "question": "What happens if an edge is not part of the graph in a weighted graph?",
+        "answer": "If an edge is not part of the graph, its weight is considered infinity."
+    },
+    {
+        "question": "How is a weighted graph represented?",
+        "answer": "A weighted graph can be represented using an adjacency matrix (which becomes a weight matrix) or adjacency lists (with weights included in each node)."
+    },
+    {
+        "question": "What is the shortest path problem in a weighted graph?",
+        "answer": "The shortest path problem involves finding a path between two vertices such that the sum of the weights of its edges is minimized."
+    },
+    {
+        "question": "What is Dijkstra's algorithm used for?",
+        "answer": "Dijkstra's algorithm is used to find the shortest path between one vertex and all other vertices in a weighted graph."
+    },
+    {
+        "question": "What is the key idea behind Dijkstra's algorithm?",
+        "answer": "Dijkstra's algorithm maintains a set S containing all vertices for which the shortest path from the starting vertex u is currently known."
+    },
+    {
+        "question": "What is the initial setup for Dijkstra's algorithm?",
+        "answer": "Initially, the set S contains only the starting vertex u, and the shortest path from u to itself is 0."
+    },
+    {
+        "question": "What does the label d(v) represent in Dijkstra's algorithm?",
+        "answer": "The label d(v) represents the length of the shortest path from the starting vertex u to vertex v, passing only through vertices in S."
+    },
+    {
+        "question": "What happens when a vertex v is added to the set S in Dijkstra's algorithm?",
+        "answer": "When a vertex v is added to S, edge relaxation is performed, updating the shortest path lengths d(w) for all vertices w not in S."
+    },
+    {
+        "question": "What is edge relaxation in Dijkstra's algorithm?",
+        "answer": "Edge relaxation updates d(w) as the minimum of the current d(w) and the sum of d(v) and the weight of the edge between v and w, i.e., d(w) = min(d(w), d(v) + wt(e))."
+    },
+    {
+        "question": "What is the time complexity of Dijkstra's algorithm using an unordered array?",
+        "answer": "The time complexity is O(n^2) using an unordered array, where n is the number of vertices."
+    },
+    {
+        "question": "What is the time complexity of Dijkstra's algorithm using a heap?",
+        "answer": "The time complexity is O(m log n) using a heap, where n is the number of vertices and m is the number of edges."
+    },
+    {
+        "question": "What is a spanning tree?",
+        "answer": "A spanning tree is a subgraph that is both a tree and spans every vertex of the original graph."
+    },
+    {
+        "question": "How is a spanning tree obtained from a connected graph?",
+        "answer": "A spanning tree is obtained by deleting edges from a connected graph while still maintaining connectivity."
+    },
+    {
+        "question": "What is the weight of a spanning tree?",
+        "answer": "The weight of a spanning tree is the sum of the weights of its edges."
+    },
+    {
+        "question": "What is the minimum weight spanning tree problem?",
+        "answer": "The minimum weight spanning tree problem is to find the spanning tree with the smallest sum of edge weights in a weighted, connected, undirected graph."
+    },
+    {
+        "question": "What are some applications of minimum weight spanning trees?",
+        "answer": "Applications include network design for computers, telecommunications, transportation, gas, electricity, clustering, and approximating the travelling salesman problem."
+    },
+    {
+        "question": "What is an example of a combinatorial optimisation problem?",
+        "answer": "The minimum weight spanning tree problem is an example of a combinatorial optimisation problem, where the goal is to find the 'best' solution among many candidates."
+    },
+    {
+        "question": "Why is exhaustive search infeasible for the minimum weight spanning tree problem?",
+        "answer": "Exhaustive search is infeasible because it typically leads to an exponential-time algorithm, making it impractical for large graphs."
+    },
+    {
+        "question": "What is the complexity of finding all spanning trees in a complete graph?",
+        "answer": "A complete graph with n vertices (denoted as K_n) has n^(n-2) spanning trees, according to Cayley's formula."
+    },
+    {
+        "question": "What is a greedy algorithm in the context of minimum weight spanning trees?",
+        "answer": "A greedy algorithm makes a sequence of locally optimal decisions that lead to a globally optimal solution, as in the case of the Prim-Jarnik algorithm."
+    },
+    {
+        "question": "What does the Prim-Jarnik algorithm do?",
+        "answer": "The Prim-Jarnik algorithm constructs a minimum spanning tree by selecting edges one by one based on local optimality."
+    },
+    {
+        "question": "What is the time complexity of the Prim-Jarnik algorithm?",
+        "answer": "The time complexity of the Prim-Jarnik algorithm is O(n^3), where n is the number of vertices in the graph."
+    },
+    {
+        "question": "What is a Directed Acyclic Graph (DAG)?",
+        "answer": "A Directed Acyclic Graph (DAG) is a directed graph with no cycles."
+    },
+    {
+        "question": "What is a topological order on a DAG?",
+        "answer": "A topological order on a DAG is a labelling of the vertices 1, ..., n such that if (u, v) is an edge, then label(u) < label(v)."
+    },
+    {
+        "question": "What are some applications of topological ordering in DAGs?",
+        "answer": "Applications include scheduling, PERT networks, and deadlock detection."
+    },
+    {
+        "question": "When does a directed graph have a topological order?",
+        "answer": "A directed graph has a topological order if and only if it is a DAG."
+    },
+    {
+        "question": "What is a source in a DAG?",
+        "answer": "A source is a vertex with an in-degree of 0."
+    },
+    {
+        "question": "What is a sink in a DAG?",
+        "answer": "A sink is a vertex with an out-degree of 0."
+    },
+    {
+        "question": "What is a basic fact about sources and sinks in a DAG?",
+        "answer": "A DAG has at least one source and at least one sink."
+    },
+    {
+        "question": "When can a vertex be given a label in the topological ordering algorithm?",
+        "answer": "A vertex is given a label only when the number of incoming edges from unlabelled vertices is zero."
+    },
+    {
+        "question": "What is the time complexity of the topological ordering algorithm using an adjacency matrix?",
+        "answer": "The time complexity is O(n^2) where n is the number of vertices."
+    },
+    {
+        "question": "What is the time complexity of the topological ordering algorithm using an adjacency list?",
+        "answer": "The time complexity is O(n + m), where n is the number of vertices and m is the number of edges."
+    },
+    {
+        "question": "How can the topological ordering algorithm be used for deadlock detection?",
+        "answer": "If the source queue becomes empty before all vertices are labelled, the digraph contains a cycle; otherwise, it is acyclic."
+    },
+    {
+        "question": "How can deadlock detection be performed using depth-first search (DFS)?",
+        "answer": "Deadlock detection can be performed by adapting DFS to find back edges, which indicate cycles."
     }
 ]
