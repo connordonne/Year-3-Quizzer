@@ -126,5 +126,337 @@
     {
         "question": "What is argsorting?",
         "answer": "Argsorting (np.argsort()) returns the indices that would sort the array, allowing reordering or cross-referencing."
+    },
+    {
+        "question": "How do computers store data?",
+        "answer": "As sequences of bits, with operations defining their meaning."
+    },
+    {
+        "question": "Are algebraic properties preserved in real number operations?",
+        "answer": "No, due to approximations in number representation for computations."
+    },
+    {
+        "question": "Why aren't these properties preserved?",
+        "answer": "Because numbers are approximated for efficient storage."
+    },
+    {
+        "question": "Do these properties sometimes hold in computations?",
+        "answer": "Yes, in many cases or good representations, but not always in general."
+    },
+    {
+        "question": "What are the main number types in arrays?",
+        "answer": "Integers and floating point numbers."
+    },
+    {
+        "question": "What types of integers exist?",
+        "answer": "Signed and unsigned integers."
+    },
+    {
+        "question": "How are integers stored in memory?",
+        "answer": "Signed integers use 2's complement, unsigned integers use binary."
+    },
+    {
+        "question": "What determines an integer’s range?",
+        "answer": "The number of bits used to represent it."
+    },
+    {
+        "question": "What happens if an operation exceeds the integer bounds?",
+        "answer": "It causes overflow, often resulting in wrapping."
+    },
+    {
+        "question": "Why do integers have limited range?",
+        "answer": "They can't represent fractional parts and are limited by data type size."
+    },
+    {
+        "question": "What is the most common representation for numbers with fractions?",
+        "answer": "Floating point."
+    },
+    {
+        "question": "Why is floating point used in modern hardware?",
+        "answer": "It efficiently handles large ranges and fractions, supported directly by hardware."
+    },
+    {
+        "question": "Is floating point the only way to represent fractional numbers?",
+        "answer": "No, fixed-point can be used but is less flexible."
+    },
+    {
+        "question": "Are there alternatives to floating point?",
+        "answer": "Yes, like unums/posits, but they're not mainstream."
+    },
+    {
+        "question": "What issues do floating point numbers have?",
+        "answer": "They can cause numerical issues due to their compact representation of a large range."
+    },
+    {
+        "question": "How are floating point numbers represented?",
+        "answer": "Using a mantissa (1.0 to 2.0) and an exponent (powers of 2)."
+    },
+    {
+        "question": "What is the advantage of floating point numbers?",
+        "answer": "They represent a large range with few digits."
+    },
+    {
+        "question": "What is the trade-off in floating point representation?",
+        "answer": "Precision varies; higher for small numbers, lower for large numbers."
+    },
+    {
+        "question": "What are the three parts of a floating point number?",
+        "answer": "Sign, exponent, and mantissa."
+    },
+    {
+        "question": "What does the sign part represent in binary floating point?",
+        "answer": "It indicates if the number is positive or negative."
+    },
+    {
+        "question": "What does the exponent part represent in binary floating point?",
+        "answer": "It shows how much to shift the mantissa by powers of 2."
+    },
+    {
+        "question": "What does the mantissa part represent in binary floating point?",
+        "answer": "It represents the fractional part of the number."
+    },
+    {
+        "question": "What is the formula for a floating point number?",
+        "answer": "sign * (1.[mantissa]) * (2^exponent)."
+    },
+    {
+        "question": "What is the 'leading one' in floating point?",
+        "answer": "A leading 1 is implied before the mantissa, representing numbers between 1.0 and 2.0."
+    },
+    {
+        "question": "How is the exponent stored?",
+        "answer": "As a positive integer with an offset (bias) to allow negative exponents."
+    },
+    {
+        "question": "What is the bias in float32?",
+        "answer": "Float32 uses a bias of 127, so exponent=0 actually means exponent=-127."
+    },
+    {
+        "question": "What is IEEE 754?",
+        "answer": "The dominant standard for floating point numbers, specifying representation, operations, and conventions for special numbers."
+    },
+    {
+        "question": "What is the precision of single and double floating-point?",
+        "answer": "Single precision (binary32) has 24 bits of precision; double precision (binary64) has 53 bits of precision."
+    },
+    {
+        "question": "What are exotic floating point formats used for?",
+        "answer": "Smaller formats like bfloat16 are used in machine learning, where precision is less critical and memory bandwidth is more important."
+    },
+    {
+        "question": "What is float32?",
+        "answer": "A 32-bit (4 bytes) floating-point number, typically used in GPUs for fast calculations."
+    },
+    {
+        "question": "What is float64?",
+        "answer": "A 64-bit (8 bytes) floating-point number, commonly supported by desktop CPUs for more precise computations."
+    },
+    {
+        "question": "Where are float128 and float256 used?",
+        "answer": "Rarely used, except in astronomical simulations where tiny errors and large scales matter."
+    },
+    {
+        "question": "Are there decimal floating-point formats in IEEE 754?",
+        "answer": "Yes, but they are rarely used outside specialized applications like some calculators."
+    },
+    {
+        "question": "What are float exceptions?",
+        "answer": "Hardware-level exceptions that occur during float operations."
+    },
+    {
+        "question": "What are the five standard floating-point exceptions?",
+        "answer": "Invalid Operation, Division by Zero, Overflow, Underflow, and Inexact."
+    },
+    {
+        "question": "What is an Invalid Operation exception?",
+        "answer": "It occurs when an undefined operation is attempted, like 0.0/0.0."
+    },
+    {
+        "question": "What causes a Division by Zero exception?",
+        "answer": "It occurs when dividing by zero."
+    },
+    {
+        "question": "What causes an Overflow exception?",
+        "answer": "When the result of a computation exceeds the limits of the floating-point number."
+    },
+    {
+        "question": "What causes an Underflow exception?",
+        "answer": "When a result is smaller than the smallest representable number, rounding it to zero."
+    },
+    {
+        "question": "What is an Inexact exception?",
+        "answer": "It occurs when a computation produces an inexact result due to rounding (very common)."
+    },
+    {
+        "question": "What happens with trapped vs. untrapped exceptions?",
+        "answer": "A trapped exception halts or signals the process; an untrapped exception defaults to a specific result (e.g., infinity for division by zero)."
+    },
+    {
+        "question": "How does NumPy handle float exceptions?",
+        "answer": "NumPy traps all exceptions except Inexact, usually printing a warning, but can be configured to halt with an exception."
+    },
+    {
+        "question": "What is special about +0.0 and -0.0 in IEEE 754?",
+        "answer": "They are both valid, compare equal, and behave the same in operations, except for the sign bit propagating."
+    },
+    {
+        "question": "How is infinity represented in IEEE 754?",
+        "answer": "Infinities are encoded with all ones for the exponent, all zeros for the mantissa, and the sign bit indicating positive or negative infinity."
+    },
+    {
+        "question": "What causes round-off problems in repeated operations?",
+        "answer": "Small rounding errors accumulate, especially in repeated operations like adding tiny values to large ones."
+    },
+    {
+        "question": "Why should floating point operations not be used for financial calculations?",
+        "answer": "Floating point can lead to rounding errors. Decimal formats with defined round-off rules are more suitable."
+    },
+    {
+        "question": "What are two rules of floating-point disaster?",
+        "answer": "1. Large error in addition if numbers have different magnitudes. 2. Large error in subtraction if numbers are nearly equal (cancellation error)."
+    },
+    {
+        "question": "Why shouldn't you compare floats with ==?",
+        "answer": "Round-off errors make it inappropriate to check for precise equality between floating point numbers."
+    },
+    {
+        "question": "How should floating point comparisons be made?",
+        "answer": "Compare using an absolute difference threshold or relative test for numbers spanning different magnitudes."
+    },
+    {
+        "question": "What is np.allclose in NumPy?",
+        "answer": "A function to test if all elements of two arrays are within a certain tolerance, combining absolute and relative tests."
+    },
+    {
+        "question": "How accurate are floating point numbers within their range?",
+        "answer": "Floating point numbers have a relative error, guaranteed by IEEE 754 to be less than a certain value."
+    },
+    {
+        "question": "What are key properties of ndarrays?",
+        "answer": "Fixed size (shape), rectangular, uniform type, contain numbers, and are multidimensional."
+    },
+    {
+        "question": "Why is transpose O(1) but adding 1 to an array O(N)?",
+        "answer": "Transpose only changes metadata (strides), while adding 1 requires updating each element."
+    },
+    {
+        "question": "How is array data stored in memory?",
+        "answer": "As a tightly packed, flat sequence of numbers with a small header describing the array layout."
+    },
+    {
+        "question": "What does np.ravel() do?",
+        "answer": "It flattens an array into a 1D sequence of elements."
+    },
+    {
+        "question": "What are strides in arrays?",
+        "answer": "Strides are memory offsets that tell the system how to index elements in multidimensional arrays."
+    },
+    {
+        "question": "How does striding work in a 2D array?",
+        "answer": "Each stride indicates how many bytes to move to the next element, with one stride per dimension (e.g., row and column in 2D)."
+    },
+    {
+        "question": "How is the memory offset for a 2D array element [i,j] calculated?",
+        "answer": "By using flat_index = i * stride[0] + j * stride[1], where strides define the step size in memory for each axis."
+    },
+    {
+        "question": "How is this generalized to higher dimensions?",
+        "answer": "The formula becomes flat_index = sum(i * stride[i] for i in range(len(shape))) for multidimensional arrays."
+    },
+    {
+        "question": "Why is striding efficient?",
+        "answer": "It allows multidimensional arrays to be stored as a single flat sequence in memory, enabling fast access with minimal overhead."
+    },
+    {
+        "question": "What is a dope vector?",
+        "answer": "A dope vector holds striding information separately from the data to specify how to index into a multidimensional array."
+    },
+    {
+        "question": "What is an Illife vector?",
+        "answer": "An Illife vector uses nested pointers to represent multidimensional arrays, like a list of lists in Python, and can store ragged arrays but is less efficient."
+    },
+    {
+        "question": "How is transposing an array done efficiently?",
+        "answer": "Transposing only exchanges the shape and strides in the array header without moving the elements, making it an O(1) operation."
+    },
+    {
+        "question": "How can you reverse an array efficiently?",
+        "answer": "By pointing the memory block pointer to the end of the array and setting negative strides."
+    },
+    {
+        "question": "What are rigid transformations in arrays?",
+        "answer": "Operations like flipping and transposing that only change the strides, not the data, making them O(1) (or O(D) with D as dimensions)."
+    },
+    {
+        "question": "What is C order (row-major)?",
+        "answer": "In C order, the last index changes first, storing elements row-wise."
+    },
+    {
+        "question": "What is Fortran order (column-major)?",
+        "answer": "In Fortran order, the first index changes fastest, storing elements column-wise."
+    },
+    {
+        "question": "What is the default NumPy array type?",
+        "answer": "NumPy arrays default to float64 for floating point values and int32 for integers."
+    },
+    {
+        "question": "How can array types be changed in NumPy?",
+        "answer": "Use .astype() to convert an array to a specified data type."
+    },
+    {
+        "question": "What is reshaping in arrays?",
+        "answer": "Reshaping changes the shape of an array without altering the elements or their order, only the way the array is indexed."
+    },
+    {
+        "question": "What are the rules for reshaping?",
+        "answer": "1. Total elements remain the same. 2. Element order remains the same. 3. The last dimension changes fastest."
+    },
+    {
+        "question": "What is the 'pouring' rule for reshaping?",
+        "answer": "Reshaping 'pours' elements into a new shape, filling up the last dimension first, but the order of elements doesn't change."
+    },
+    {
+        "question": "What are rank-preserving operations?",
+        "answer": "Operations like indexing (x[0]), reductions (e.g., np.sum(x)), and ravel(), where the number of dimensions is reduced."
+    },
+    {
+        "question": "What are rank-promoting operations?",
+        "answer": "Operations like broadcasting and np.tile that add new dimensions to an array."
+    },
+    {
+        "question": "Why would you promote rank?",
+        "answer": "To enable operations like multiplying vectors where you need to turn a 1D vector into a row or column vector by adding a singleton dimension."
+    },
+    {
+        "question": "How can you promote a 1D vector to a matrix?",
+        "answer": "By adding a singleton dimension (shape of 1) to convert a 1D vector into a row or column vector."
+    },
+    {
+        "question": "How can you add dimensions to an array?",
+        "answer": "Use None or np.newaxis in indexing to add a singleton dimension, promoting the array to a higher rank."
+    },
+    {
+        "question": "How can you remove dimensions from an array?",
+        "answer": "Indexing automatically removes dimensions, especially singleton dimensions (one element)."
+    },
+    {
+        "question": "What does np.squeeze() do?",
+        "answer": "It removes all singleton dimensions from an array."
+    },
+    {
+        "question": "What is the purpose of ellipsis (...) in indexing?",
+        "answer": "Ellipsis is shorthand for 'all' slices, allowing you to skip writing multiple : in an indexing operation (e.g., img_tensor[0, ..., 4])."
+    },
+    {
+        "question": "How do you swap axes in an array?",
+        "answer": "Use np.swapaxes(array, axis1, axis2) to swap any two axes in an array."
+    },
+    {
+        "question": "What is the 'swap, reshape, swap' technique?",
+        "answer": "It involves rearranging axes, reshaping the array (following the pouring rule), and optionally rearranging the axes again to achieve a desired layout."
+    },
+    {
+        "question": "How can you reshape a video (frames, width, height, 3) into a film strip of color channels?",
+        "answer": "Swap axes, reshape the array, and swap axes again to get the desired shape (e.g., splitting into three rows for red, green, and blue)."
     }
 ]
