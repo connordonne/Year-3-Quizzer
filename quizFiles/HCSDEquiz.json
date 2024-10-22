@@ -110,5 +110,105 @@
     {
         "question": "What considerations should be made for using colour in interfaces?",
         "answer": "• Avoid relying solely on colour to convey critical information. • Ensure accessibility for visually impaired and colour-blind users."
+    },
+    {
+        "question": "What is the signal and noise metaphor in HCI experiments?",
+        "answer": "Signal represents the variable of interest, such as an input device, while noise includes random influences like environmental circumstances."
+    },
+    {
+        "question": "What is the purpose of designing an experiment in HCI research?",
+        "answer": "To enhance the signal by reducing noise through carefully designing the setup, manipulating variables, and choosing appropriate procedures, tasks, and participants."
+    },
+    {
+        "question": "Why is having a sound methodology critical in HCI experiments?",
+        "answer": "A sound methodology ensures scientific rigor and allows researchers to make sense of the 'signal' in a noisy world by making deliberate decisions about variables, tasks, participants, and data analysis."
+    },
+    {
+        "question": "What role do the APA guidelines play in HCI research?",
+        "answer": "APA guidelines help researchers structure their methodology, define variables, recruit participants, report statistical results, and ensure the research process is standardized and replicable."
+    },
+    {
+        "question": "What is ethics approval, and why is it important in HCI research?",
+        "answer": "Ethics approval ensures the safety, dignity, and welfare of participants and must be obtained from institutional boards to confirm the experiment meets ethical standards, especially regarding informed consent and participant rights."
+    },
+    {
+        "question": "What must participants be informed about?",
+        "answer": "Participants must be informed about the nature of the research, methodology, risks, benefits, their right to withdraw without penalty, and their right to anonymity and confidentiality."
+    },
+    {
+        "question": "What are independent and dependent variables in HCI experiments?",
+        "answer": "The independent variable is manipulated by the researcher, such as an interface or interaction technique, while the dependent variable is the measurable outcome that depends on participant behavior, like task completion time or accuracy."
+    },
+    {
+        "question": "What is a confounding variable?",
+        "answer": "A confounding variable systematically changes with the independent variable, making it unclear whether the observed effects are due to the independent variable or the confound."
+    },
+    {
+        "question": "How can researchers avoid confounding variables in HCI experiments?",
+        "answer": "Researchers should eliminate or account for confounding variables, such as using the same equipment for all test conditions to avoid bias."
+    },
+    {
+        "question": "What are control and random variables, and how do they affect experiment outcomes?",
+        "answer": "Control variables are kept constant to avoid influencing the dependent variable, while random variables are allowed to vary freely, which increases generalizability but can introduce more variability."
+    },
+    {
+        "question": "What is the difference between within-subjects and between-subjects experimental designs?",
+        "answer": "In within-subjects designs, all participants experience all conditions, while in between-subjects designs, different groups of participants are tested on different conditions."
+    },
+    {
+        "question": "What are the pros and cons of using a within-subjects design versus a between-subjects design in experiments?",
+        "answer": "Within-subjects designs require fewer participants and minimize variance as participants act as their own control, but may introduce interference or learning effects. Between-subjects designs require more participants, avoid interference, but require careful balancing of participant groups."
+    },
+    {
+        "question": "What are order effects?",
+        "answer": "Order effects occur when the sequence of conditions influences performance, such as through learning or fatigue."
+    },
+    {
+        "question": "What is counterbalancing, and why is it important in within-subjects design?",
+        "answer": "Counterbalancing is a method of varying the order of conditions for participants to reduce practice or fatigue effects, ensuring the order in which conditions are presented does not bias results."
+    },
+    {
+        "question": "Why is sample size important in HCI experiments, and how do researchers determine the right number of participants?",
+        "answer": "Sample size impacts the likelihood of obtaining statistically significant results. Researchers often use a similar number of participants to previous studies to ensure statistical power without overinflating sample size."
+    },
+    {
+        "question": "What is the role of pilot testing in HCI experiments?",
+        "answer": "Pilot testing ensures that the experimental setup, tasks, and data collection methods work as intended and that the collected data is valid for analysis."
+    },
+    {
+        "question": "What is the purpose of a questionnaire in HCI experiments?",
+        "answer": "Questionnaires gather demographic information and participants' opinions on the interfaces or interaction techniques, helping to assess both objective and subjective aspects of the experiment."
+    },
+    {
+        "question": "How can practice or learning effects impact the results of an HCI experiment?",
+        "answer": "Participants may improve their performance due to practice over time rather than differences in test conditions. Counterbalancing is used to mitigate this effect."
+    },
+    {
+        "question": "What are the risks of using too many independent variables in an HCI experiment?",
+        "answer": "Too many independent variables increase the complexity of interactions between them, which may lead to confusing or difficult-to-interpret results."
+    },
+    {
+        "question": "What are two types of validity to consider in experimental design?",
+        "answer": "Internal validity ensures the observed effect is due to the manipulated condition, while external validity ensures the results are generalizable to other people or situations."
+    },
+    {
+        "question": "What are some key considerations when choosing tasks for an experiment?",
+        "answer": "Tasks should be representative of real-world usage and should be able to discriminate differences in performance between test conditions."
+    },
+    {
+        "question": "What factors should be considered when recruiting participants?",
+        "answer": "Participants should be representative of the population being studied, and the sample size should be sufficient to capture variability without being too large or too small."
+    },
+    {
+        "question": "What does the Central Limit Theorem suggest about sample sizes?",
+        "answer": "As the sample size approaches 30, the data becomes approximately normally distributed."
+    },
+    {
+        "question": "What are longitudinal studies, and when might they be used in HCI research?",
+        "answer": "Longitudinal studies track participants over time to observe learning effects or performance changes, useful in comparing familiar systems like QWERTY to unfamiliar ones like Dvorak keyboards."
+    },
+    {
+        "question": "Why is piloting a study important before running an experiment?",
+        "answer": "Piloting helps identify unforeseen technical issues, task confusion, or excessively long durations, ensuring the study runs smoothly and participants understand the instructions."
     }
 ]
