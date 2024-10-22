@@ -98,5 +98,17 @@
     {
         "question": "What are templates, and how are they used?",
         "answer": "Templates provide consistent margins and placement rules for types of content. They enforce internal consistency but may limit design creativity."
+    },
+    {
+        "question": "What is the role of colour in HCI?",
+        "answer": "• A powerful way to attract the user's attention. • Can evoke emotional responses, enhancing the appeal and usability of interfaces. • Helps in understanding by linking related items visually."
+    },
+    {
+        "question": "What factors influence colour choices in design?",
+        "answer": "• Cultural associations, which can vary by region or context. • Established UI conventions, such as red for error messages."
+    },
+    {
+        "question": "What considerations should be made for using colour in interfaces?",
+        "answer": "• Avoid relying solely on colour to convey critical information. • Ensure accessibility for visually impaired and colour-blind users."
     }
 ]
