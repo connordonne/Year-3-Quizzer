@@ -210,5 +210,133 @@
     {
         "question": "Why is piloting a study important before running an experiment?",
         "answer": "Piloting helps identify unforeseen technical issues, task confusion, or excessively long durations, ensuring the study runs smoothly and participants understand the instructions."
+    },
+    {
+        "question": "What is the primary purpose of a survey in research?",
+        "answer": "To gather high level information about user experiences, attitudes, and perceptions by asking questions to a subset of people. Results are generalisable to the wider target population."
+    },
+    {
+        "question": "What are the benefits of using surveys in research?",
+        "answer": "Low cost, ease and speed of administration, ability to reach a wide variety of populations worldwide."
+    },
+    {
+        "question": "What are two key considerations when designing a survey?",
+        "answer": "Reduce biases in questions, consider the order of questions to minimise order effects."
+    },
+    {
+        "question": "In the context of HCI research, list two types of information surveys can gather.",
+        "answer": "People’s habits, interaction with technology, or behaviour; feedback on people’s experiences with a product, service, or application."
+    },
+    {
+        "question": "What is one major limitation of surveys when compared to other research methods?",
+        "answer": "Surveys do not allow for the observation of the respondent’s context or follow-up questions, making them less suitable for researching precise behaviours and underlying motivations."
+    },
+    {
+        "question": "What is the Likert scale?",
+        "answer": "A method for measuring attitudes by asking respondents to rate statements on a scale, typically from 'strongly agree' to 'strongly disagree'."
+    },
+    {
+        "question": "What are the four types of survey-related errors identified by Groves (1989)?",
+        "answer": "Coverage error, sampling error, measurement error, non-response error."
+    },
+    {
+        "question": "What is a measurement error?",
+        "answer": "Deviation of respondents’ answers from their true values on the measure, caused by respondent issues like lack of motivation or comprehension, or instrument flaws such as poor wording or technical issues."
+    },
+    {
+        "question": "What is the advantage of combining surveys with other research methods in HCI studies?",
+        "answer": "Surveys gather quantitative data that can be complemented with qualitative insights from methods like interviews, offering a more holistic understanding of the research question."
+    },
+    {
+        "question": "Why are surveys not ideal for evaluating usability tasks?",
+        "answer": "Surveys cannot capture specific reasons behind task failure or why users struggle with aspects of a product, making them less ideal for usability evaluations."
+    },
+    {
+        "question": "What are two key factors researchers must consider when defining the population for a survey?",
+        "answer": "The population they want to generalise their findings to and the sampling frame."
+    },
+    {
+        "question": "What is a sampling frame and why is it important in survey research?",
+        "answer": "A subset of the population that the researcher can reach to invite to participate in the survey. An incomplete or biased sampling frame can result in coverage errors, leading to misrepresentation of the population."
+    },
+    {
+        "question": "In survey research, what is the relationship between 'sample' and 'respondents'?",
+        "answer": "The sample refers to the people invited to participate in the survey, while respondents are those who actually complete the survey."
+    },
+    {
+        "question": "Why might surveys be used to track user attitudes over time in HCI research?",
+        "answer": "Surveys provide statistically reliable data that can be used to benchmark and track changes in user attitudes, perceptions, and experiences over time, which is useful for longitudinal studies in HCI research."
+    },
+    {
+        "question": "What are the two main categories of survey questions?",
+        "answer": "Open-ended and closed-ended."
+    },
+    {
+        "question": "When is it appropriate to use open-ended questions in a survey?",
+        "answer": "When the universe of possible answers is unknown, when measuring quantities with natural metrics, or when gathering qualitative aspects of a user’s experience."
+    },
+    {
+        "question": "What are the two types of rating scales used in closed-ended questions?",
+        "answer": "Unipolar scales, which range from zero to an extreme amount, and bipolar scales, which range from an extreme negative to an extreme positive with a natural midpoint."
+    },
+    {
+        "question": "What is satisficing in survey responses?",
+        "answer": "Satisficing occurs when respondents use minimal cognitive effort to answer questions, choosing a satisfactory answer without fully considering the question, which can lead to suboptimal or random responses."
+    },
+    {
+        "question": "What is acquiescence bias, and how can it be minimised?",
+        "answer": "Acquiescence bias is the tendency of respondents to agree with statements regardless of their content. It can be minimised by avoiding yes/no or agree/disagree questions."
+    },
+    {
+        "question": "What is social desirability bias, and what types of questions are most susceptible to it?",
+        "answer": "Social desirability bias occurs when respondents answer questions in a way they think will be viewed positively by others. Sensitive topics like voting behaviour, illegal acts, or sexual activity are most susceptible."
+    },
+    {
+        "question": "What is response order bias, and how can it be minimised?",
+        "answer": "Response order bias is the tendency for respondents to favour options at the beginning or end of a list. It can be minimised by randomising answer options or alternating the order of scales between respondents."
+    },
+    {
+        "question": "How does order bias affect survey responses?",
+        "answer": "Order bias occurs when earlier questions influence the responses to later ones, often by priming the respondent’s thoughts in a certain direction."
+    },
+    {
+        "question": "What are double-barrelled questions, and why should they be avoided?",
+        "answer": "Double-barrelled questions ask about more than one item while only allowing for a single response. They should be avoided as they force respondents to give a single answer for multiple constructs, leading to less reliable data."
+    },
+    {
+        "question": "Why are recall and prediction questions problematic in surveys?",
+        "answer": "Respondents may struggle to accurately remember past behaviours or attitudes, leading to recall bias. Additionally, people often cannot accurately predict future behaviours or attitudes."
+    },
+    {
+        "question": "What is a leading question, and why is it considered biased?",
+        "answer": "A leading question suggests a particular answer or includes information that biases the respondent, manipulating the respondent’s answer to align with the researcher’s expectations."
+    },
+    {
+        "question": "Why should hypothetical questions be avoided in surveys?",
+        "answer": "Respondents are poor at predicting their future behaviours or attitudes, which can result in inaccurate data."
+    },
+    {
+        "question": "How do computer-based surveys compare to paper-based surveys?",
+        "answer": "Computer-based surveys elicit less socially desirable responses and longer open-ended responses, according to an early study in 1983."
+    },
+    {
+        "question": "What are the four cognitive steps in answering survey questions?",
+        "answer": "Comprehension of the question and answer choices, retrieval of specific memories, judgement of the retrieved information, and mapping of judgement onto the answer options."
+    },
+    {
+        "question": "What are two common pitfalls in survey design?",
+        "answer": "Low completion rates due to poor design, and noisy data from vague or biased questions."
+    },
+    {
+        "question": "What is the first step in developing a good survey?",
+        "answer": "Articulate research goals and identify key constructs that the survey will measure."
+    },
+    {
+        "question": "Why is it important to conduct a pilot test before launching a survey?",
+        "answer": "Pilot testing helps determine realistic completion times and ensures any technical issues or configuration problems are resolved."
+    },
+    {
+        "question": "What is the benefit of using standardised questionnaires like SUS or NASA TLX?",
+        "answer": "Standardised questionnaires are widely tested and validated, providing reliable and comparable data across different studies, eliminating the need to reinvent survey questions."
     }
 ]
