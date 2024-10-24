@@ -360,10 +360,6 @@
         "answer": "A topological order on a DAG is a labelling of the vertices 1, ..., n such that if (u, v) is an edge, then label(u) < label(v)."
     },
     {
-        "question": "What are some applications of topological ordering in DAGs?",
-        "answer": "Applications include scheduling, PERT networks, and deadlock detection."
-    },
-    {
         "question": "When does a directed graph have a topological order?",
         "answer": "A directed graph has a topological order if and only if it is a DAG."
     },
@@ -398,5 +394,81 @@
     {
         "question": "How can deadlock detection be performed using depth-first search (DFS)?",
         "answer": "Deadlock detection can be performed by adapting DFS to find back edges, which indicate cycles."
+    },
+    {
+        "question": "What is Dijkstra's Refinement used for?",
+        "answer": "Dijkstra's Refinement is an algorithm used to find the minimum spanning tree (MST) for a weighted graph."
+    },
+    {
+        "question": "What is a Tree Vertex (tv) in Dijkstra's Refinement?",
+        "answer": "A Tree Vertex (tv) is a vertex that is part of the growing MST."
+    },
+    {
+        "question": "What is a Non-Tree Vertex (ntv) in Dijkstra's Refinement?",
+        "answer": "A Non-Tree Vertex (ntv) is a vertex that is not yet part of the MST."
+    },
+    {
+        "question": "What is the attribute 'bestTV' used for in Dijkstra's Refinement?",
+        "answer": "For each non-tree vertex, the 'bestTV' attribute stores the tree vertex that connects to it with the smallest edge weight. It is dynamically updated during the algorithm."
+    },
+    {
+        "question": "What is the first step of the initialization process in Dijkstra's Refinement?",
+        "answer": "The first step is to select an arbitrary vertex u as the first tree vertex (tv)."
+    },
+    {
+        "question": "What happens during the main loop of Dijkstra's Refinement?",
+        "answer": "During the main loop, the algorithm finds the non-tree vertex with the minimal edge weight to its bestTV, adds this vertex to the MST, and updates the bestTV for all remaining non-tree vertices."
+    },
+    {
+        "question": "What is the time complexity for initializing the tree vertex and assigning bestTV in Dijkstra's Refinement?",
+        "answer": "The initialization takes O(n) time."
+    },
+    {
+        "question": "How many times is the main loop of Dijkstra's Refinement executed?",
+        "answer": "The main loop is executed n-1 times, where n is the number of vertices."
+    },
+    {
+        "question": "What is the time complexity of finding the non-tree vertex with the minimal edge weight in each iteration of the main loop?",
+        "answer": "Finding the non-tree vertex with the minimal edge weight in each iteration takes O(n) time, resulting in O(n^2) comparisons overall."
+    },
+    {
+        "question": "What is the overall time complexity of Dijkstra's Refinement?",
+        "answer": "The total time complexity of the algorithm is O(n^2)."
+    },
+    {
+        "question": "In Dijkstra's Refinement, how is the Minimum Spanning Tree (MST) built incrementally?",
+        "answer": "The MST is built incrementally by selecting the non-tree vertex with the smallest edge weight, adding it to the tree, and updating bestTV for the remaining non-tree vertices."
+    },
+    {
+        "question": "Why does the presence of a cycle make topological ordering impossible?",
+        "answer": "In a cycle, it's impossible to label vertices such that for every edge (u,v), label(u) < label(v)."
+    },
+    {
+        "question": "What are the two attributes used in the topological ordering algorithm for each vertex?",
+        "answer": "The two attributes are 'label', which is the label in the topological order, and 'count', which is the in-degree of the vertex."
+    },
+    {
+        "question": "What is the role of the 'nextLabel' variable in the topological ordering algorithm?",
+        "answer": "The 'nextLabel' variable is used to label the next vertex, and it is incremented after each labelling."
+    },
+    {
+        "question": "What happens to a vertex's 'count' attribute during the algorithm?",
+        "answer": "The 'count' attribute, which represents the number of incoming edges, is decremented each time an adjacent vertex is labelled."
+    },
+    {
+        "question": "When is a vertex added to the 'sourceQueue' in the topological ordering algorithm?",
+        "answer": "A vertex is added to the 'sourceQueue' when its 'count' attribute becomes zero, meaning it has no incoming edges from unlabelled vertices."
+    },
+    {
+        "question": "What ensures the correctness of the topological ordering algorithm?",
+        "answer": "Correctness is ensured by labelling a vertex only when it has no incoming edges from unlabelled vertices, and using a queue for first-in, first-out ordering."
+    },
+    {
+        "question": "What is the time complexity of the topological ordering algorithm using an adjacency list representation?",
+        "answer": "The time complexity is O(n + m), where n is the number of vertices and m is the number of edges."
+    },
+    {
+        "question": "What is the time complexity of the topological ordering algorithm using an adjacency matrix representation?",
+        "answer": "The time complexity is O(n^2), where n is the number of vertices."
     }
 ]
