@@ -470,5 +470,189 @@
     {
         "question": "What is the time complexity of the topological ordering algorithm using an adjacency matrix representation?",
         "answer": "The time complexity is O(n^2), where n is the number of vertices."
+    },
+    {
+        "question": "What is Huffman Encoding primarily used for?",
+        "answer": "Huffman Encoding is used to compress data by assigning shorter codes to more frequent characters, reducing file size."
+    },
+    {
+        "question": "Why is Huffman Encoding considered optimal?",
+        "answer": "Huffman Encoding is optimal because it minimises the Weighted Path Length (WPL), which is the total number of bits needed to represent a file in binary."
+    },
+    {
+        "question": "How is the Weighted Path Length (WPL) of a Huffman Tree calculated?",
+        "answer": "WPL is calculated as the sum of each character's weight (frequency) multiplied by its distance from the root in the Huffman tree."
+    },
+    {
+        "question": "In a Huffman Tree, how do you calculate the WPL for each leaf node?",
+        "answer": "For each leaf node, multiply the frequency of that node by its depth (distance from the root) and sum these values to get the WPL."
+    },
+    {
+        "question": "What does the Huffman Tree’s structure ensure regarding the WPL?",
+        "answer": "The Huffman Tree structure ensures the smallest WPL among all possible binary trees with the same leaf weights, making it optimal for data compression."
+    },
+    {
+        "question": "Is there a unique Huffman Tree for every set of character frequencies?",
+        "answer": "No, while the structure may vary slightly, especially with nodes of the same minimum weight, all trees for a given frequency set yield the same WPL."
+    },
+    {
+        "question": "How are codes assigned to characters in Huffman Encoding?",
+        "answer": "Each character is assigned a code word (sequence of bits) based on its position from the root in the Huffman Tree."
+    },
+    {
+        "question": "What determines the size of each code word in Huffman Encoding?",
+        "answer": "The size of each code word corresponds to the distance of the character's node from the root."
+    },
+    {
+        "question": "In Huffman Encoding, how does the frequency of a character affect the tree?",
+        "answer": "The frequency of each character determines the weight of its leaf node in the Huffman Tree, with more frequent characters being placed closer to the root."
+    },
+    {
+        "question": "What is the first step in building a Huffman Tree?",
+        "answer": "The first step is finding the frequencies of each character in the text, which takes O(n) time for a text of length n with m distinct characters."
+    },
+    {
+        "question": "What data structure is used to build the Huffman Tree efficiently?",
+        "answer": "A min-heap is used to store nodes by their weights to facilitate efficient tree construction."
+    },
+    {
+        "question": "What is the overall time complexity for constructing a Huffman Tree?",
+        "answer": "The overall time complexity for building the tree is O(n + m log m), which can be simplified to O(n) if m is constant."
+    },
+    {
+        "question": "How is text compressed using the Huffman code table?",
+        "answer": "Text is compressed by looking up each character's code in the code table and replacing it with the corresponding bit sequence."
+    },
+    {
+        "question": "What is the total time complexity for compressing text using Huffman Encoding?",
+        "answer": "The total time complexity for compression is O(m log m + n), where m is the number of distinct characters and n is the text length."
+    },
+    {
+        "question": "How is text decompressed using the Huffman Tree?",
+        "answer": "Decompression involves tracing paths in the Huffman Tree to reconstruct each character, with a time complexity of O(n log m)."
+    },
+    {
+        "question": "What must be included with a compressed file for decompression to work?",
+        "answer": "Some form of the Huffman Tree structure must be included in the compressed file to allow decompression."
+    },
+    {
+        "question": "What is Adaptive Huffman Coding?",
+        "answer": "Adaptive Huffman Coding updates the tree in real-time during compression and decompression, eliminating the need to store a fixed tree."
+    },
+    {
+        "question": "What does LZW (Lempel-Ziv-Welch) encoding do?",
+        "answer": "LZW encoding is a data compression algorithm that uses a dictionary-based approach to compress text by identifying recurring patterns and representing them with codewords."
+    },
+    {
+        "question": "What is the initial setup for LZW encoding?",
+        "answer": "The initial setup involves a dictionary containing all single characters, and the text is read from left to right."
+    },
+    {
+        "question": "What is the first step in the main loop of LZW encoding?",
+        "answer": "The first step is to identify the longest substring starting at the current position in the text that is already in the dictionary."
+    },
+    {
+        "question": "What happens once the longest substring is found in LZW encoding?",
+        "answer": "The codeword for this substring is outputted, and the text position advances by the length of the substring."
+    },
+    {
+        "question": "What is added to the dictionary after outputting a codeword in LZW encoding?",
+        "answer": "The new string, which is the identified substring plus the next character in the text, is added to the dictionary with the next available codeword."
+    },
+    {
+        "question": "What adjustment is made when the LZW dictionary becomes full?",
+        "answer": "When the dictionary fills up, the length of the codewords in bits (k) is increased to handle larger codewords."
+    },
+    {
+        "question": "What data structure is typically used to implement the dictionary in LZW encoding?",
+        "answer": "The dictionary is implemented as a trie (prefix tree), where each node represents a string."
+    },
+    {
+        "question": "What two main attributes does each node in the LZW trie have?",
+        "answer": "Each node has an integer attribute for the codeword representing the string and child nodes for each possible next character."
+    },
+    {
+        "question": "How does the LZW algorithm navigate the trie?",
+        "answer": "The algorithm uses two nodes, current and next, to navigate the trie. It searches for the next node in the trie with each character read. If found, it moves to the next node."
+    },
+    {
+        "question": "What happens if the next node in the trie is null during LZW encoding?",
+        "answer": "If next is null, it indicates the longest substring has been reached, so the codeword for the current node is outputted, and a new entry is added to the dictionary."
+    },
+    {
+        "question": "How is a missing codeword handled during LZW decompression?",
+        "answer": "If a codeword is missing during decompression, the missing string can often be deduced based on previous entries."
+    },
+    {
+        "question": "What structure is used for LZW decompression?",
+        "answer": "A simple table is used for decompression, where each entry corresponds to a codeword and its associated string."
+    },
+    {
+        "question": "What is the time complexity for both compression and decompression in LZW?",
+        "answer": "Both compression and decompression have a time complexity of O(n) for a text of length n."
+    },
+    {
+        "question": "How is efficient substring searching achieved in LZW?",
+        "answer": "Efficient substring searching is achieved by using a trie structure to represent the dictionary."
+    },
+    {
+        "question": "What is the main goal of the string distance algorithm?",
+        "answer": "The string distance algorithm calculates the minimal number of operations (insertion, deletion, substitution) needed to transform one string into another."
+    },
+    {
+        "question": "What happens when characters match in the string distance algorithm?",
+        "answer": "If characters match (s[i - 1] = t[j - 1]), the distance remains the same as d(i - 1, j - 1)."
+    },
+    {
+        "question": "What is the recurrence relation when characters do not match in the string distance algorithm?",
+        "answer": "When characters do not match, d(i, j) = 1 + min{d(i, j - 1), d(i - 1, j), d(i - 1, j - 1)}, representing insertion, deletion, and substitution respectively."
+    },
+    {
+        "question": "What does d(i, 0) represent in the base cases?",
+        "answer": "d(i, 0) = i, representing the number of deletions needed to turn a substring of s into an empty string."
+    },
+    {
+        "question": "What does d(0, j) represent in the base cases?",
+        "answer": "d(0, j) = j, representing the number of insertions needed to turn an empty string into a substring of t."
+    },
+    {
+        "question": "What is the purpose of the dynamic programming table in the string distance algorithm?",
+        "answer": "The table stores the minimum number of operations needed to transform each prefix of string s into each prefix of string t."
+    },
+    {
+        "question": "What is the time complexity of the string distance algorithm?",
+        "answer": "The time complexity is O(m × n), where m and n are the lengths of the two strings."
+    },
+    {
+        "question": "What is the space complexity of the string distance algorithm, and how can it be optimised?",
+        "answer": "The space complexity is O(m × n), but it can be reduced to O(m + n) by storing only the most recent row or column values."
+    },
+    {
+        "question": "What is the purpose of the traceback phase in the string distance algorithm?",
+        "answer": "The traceback phase identifies the sequence of operations (insertions, deletions, substitutions) that transform one string into the other."
+    },
+    {
+        "question": "What does a vertical step in the traceback phase represent?",
+        "answer": "A vertical step ((i, j) → (i - 1, j)) represents a deletion operation."
+    },
+    {
+        "question": "What does a horizontal step in the traceback phase represent?",
+        "answer": "A horizontal step ((i, j) → (i, j - 1)) represents an insertion operation."
+    },
+    {
+        "question": "What does a diagonal step in the traceback phase represent?",
+        "answer": "A diagonal step ((i, j) → (i - 1, j - 1)) represents a match if the distance remains unchanged or a substitution if the distance increased by 1."
+    },
+    {
+        "question": "What is an example of operations in the traceback sequence?",
+        "answer": "For two strings s and t, the steps may include matches, insertions, and substitutions such as: Match 'a', Insert 'c', Substitute 'd' with 'c'."
+    },
+    {
+        "question": "Why might there be multiple optimal alignments in the traceback phase?",
+        "answer": "There can be multiple optimal paths if several paths yield the same minimum distance, allowing different sequences of operations."
+    },
+    {
+        "question": "What is Hirschberg's Algorithm, and how does it relate to string distance?",
+        "answer": "Hirschberg's Algorithm is used to reduce space complexity to O(m + n) while finding optimal alignments, though it is more complex to implement."
     }
 ]
