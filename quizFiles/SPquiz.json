@@ -94,5 +94,65 @@
     {
         "question": "How are structs and arrays passed to functions?",
         "answer": "Structs by value; arrays by reference (first element’s address)."
+    },
+    {
+        "question": "What is 'byte addressable memory'?",
+        "answer": "Each byte in memory has its own address. In a 64-bit architecture, addresses are 64 bits (or 8 bytes) long."
+    },
+    {
+        "question": "What is a pointer in C programming?",
+        "answer": "A pointer is a variable that stores the address of another variable."
+    },
+    {
+        "question": "What does the 'address-of' operator (&) do?",
+        "answer": "It gives the memory address of a variable."
+    },
+    {
+        "question": "What is the 'dereference' operator (*)?",
+        "answer": "It accesses the value at the address held by a pointer."
+    },
+    {
+        "question": "Why is memory management important for energy efficiency?",
+        "answer": "Efficient use of memory reduces data transfer and energy consumption, as memory access and movement use considerable system energy."
+    },
+    {
+        "question": "What happens if a pointer is set to NULL?",
+        "answer": "NULL represents 'no address' or 'nothing' and is used when a pointer has no valid address."
+    },
+    {
+        "question": "What does malloc do?",
+        "answer": "malloc allocates a specified number of bytes in heap memory and returns a pointer to the first byte of this block."
+    },
+    {
+        "question": "What does free do, and why should you use it?",
+        "answer": "free deallocates memory previously allocated on the heap, preventing memory leaks."
+    },
+    {
+        "question": "What is a memory leak?",
+        "answer": "A memory leak occurs when allocated memory is not freed, leading to wasted memory resources."
+    },
+    {
+        "question": "What is the difference between stack and heap memory?",
+        "answer": "Stack memory is automatically managed and used for fixed-size variables, while heap memory is manually managed and used for dynamically-sized allocations."
+    },
+    {
+        "question": "What is void * in C?",
+        "answer": "void * is a generic pointer type in C that can hold any pointer type but cannot be dereferenced directly."
+    },
+    {
+        "question": "How are pointers and arrays related?",
+        "answer": "The name of an array refers to the address of its first element, making it similar to a pointer to the array’s start."
+    },
+    {
+        "question": "What is pointer arithmetic?",
+        "answer": "Pointer arithmetic involves adding or subtracting integer values to pointers, moving the pointer by the size of the data type it points to."
+    },
+    {
+        "question": "What is the risk of returning a pointer to a local variable?",
+        "answer": "The pointer might outlive the variable, pointing to an invalid address after the variable’s lifetime ends."
+    },
+    {
+        "question": "How can you declare a pointer that points to a constant?",
+        "answer": "Use const to declare constant pointers: float * const ptr; (pointer address is constant), const float * ptr; (value pointed to is constant), or const float * const ptr; (both address and value are constant)."
     }
 ]
