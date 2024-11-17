@@ -654,5 +654,221 @@
     {
         "question": "What is Hirschberg's Algorithm, and how does it relate to string distance?",
         "answer": "Hirschberg's Algorithm is used to reduce space complexity to O(m + n) while finding optimal alignments, though it is more complex to implement."
+    },
+    {
+        "question": "What is the Knuth-Morris-Pratt (KMP) Algorithm?",
+        "answer": "The Knuth-Morris-Pratt (KMP) Algorithm is an efficient string searching algorithm that operates in linear time, with a time complexity of O(m + n), where m is the length of the pattern and n is the length of the text."
+    },
+    {
+        "question": "What is the time complexity of the KMP Algorithm?",
+        "answer": "The time complexity of the KMP Algorithm is O(m + n), where m is the length of the pattern and n is the length of the text."
+    },
+    {
+        "question": "What does it mean that the KMP Algorithm is an 'online algorithm'?",
+        "answer": "An online algorithm processes the input data in a sequential manner and does not require backtracking, making it efficient for string searching."
+    },
+    {
+        "question": "What is a border in the context of the KMP Algorithm?",
+        "answer": "A border of a string is a substring that is both a prefix and a suffix, but is not the entire string itself."
+    },
+    {
+        "question": "What is the purpose of the border table (prefix table) in the KMP Algorithm?",
+        "answer": "The border table is used to track the longest prefix that is also a suffix for each substring of the pattern. It helps determine the next position in the pattern to compare after a mismatch."
+    },
+    {
+        "question": "How is the border table represented in the KMP Algorithm?",
+        "answer": "The border table is represented by an array 'b' of size equal to the length of the pattern. Each entry b[j] stores the length of the longest border for the substring ending at position j."
+    },
+    {
+        "question": "What is the time complexity of constructing the border table using the naïve method?",
+        "answer": "The time complexity of constructing the border table using the naïve method is O(m^3), where m is the length of the pattern."
+    },
+    {
+        "question": "What is the time complexity of constructing the border table using the efficient method?",
+        "answer": "The time complexity of constructing the border table using the efficient method is O(m), where m is the length of the pattern."
+    },
+    {
+        "question": "Describe the KMP Algorithm workflow.",
+        "answer": "The KMP Algorithm workflow involves two main steps: 1) Pre-process the pattern by constructing the border table. 2) Search the text by comparing the pattern with the text, using the border table to skip unnecessary comparisons."
+    },
+    {
+        "question": "How does the KMP Algorithm handle mismatches?",
+        "answer": "On a mismatch, the KMP Algorithm uses the border table to determine the next position in the pattern to compare. If no suitable position is found, the pattern index is reset to 0, while the text index remains unchanged."
+    },
+    {
+        "question": "Give an example of the border table for the pattern 'ababa'.",
+        "answer": "For the pattern 'ababa', the longest matching prefix and suffix is 'aba'. The border table values are: [0, 0, 1, 2, 3]."
+    },
+    {
+        "question": "What is the difference between the brute force string search and the KMP Algorithm?",
+        "answer": "The brute force string search checks all possible positions in the text and may require O(m × n) time due to backtracking. The KMP Algorithm avoids backtracking using the border table, achieving linear time complexity of O(m + n)."
+    },
+    {
+        "question": "Why is the KMP Algorithm considered more efficient than brute force string search?",
+        "answer": "The KMP Algorithm is more efficient because it uses the border table to skip unnecessary comparisons, avoiding backtracking and ensuring a linear time complexity of O(m + n)."
+    },
+    {
+        "question": "In the KMP Algorithm, what happens if no match is found after a mismatch?",
+        "answer": "If no match is found after a mismatch, the pattern index (j) is reset to 0, and the search continues from the current text index (i)."
+    },
+    {
+        "question": "Summarise the key advantage of the KMP Algorithm.",
+        "answer": "The key advantage of the KMP Algorithm is its ability to skip unnecessary comparisons using the border table, resulting in an efficient linear time complexity for string searching."
+    },
+    {
+        "question": "Provide an example of how the KMP Algorithm handles a mismatch using the text 'gagcagagcag' and the pattern 'gagcagagt'.",
+        "answer": "In this example, a mismatch occurs at position 9. The KMP Algorithm uses the border table to shift the pattern without backtracking in the text. If no match is found, the pattern index is reset to 0, while the text index remains unchanged."
+    },
+    {
+        "question": "What is the main goal of the Boyer-Moore Algorithm?",
+        "answer": "The main goal of the Boyer-Moore Algorithm is to provide a faster solution for string searching, typically faster than both brute-force and Knuth-Morris-Pratt (KMP), by skipping characters based on mismatches."
+    },
+    {
+        "question": "How does the Boyer-Moore Algorithm typically scan the pattern?",
+        "answer": "The Boyer-Moore Algorithm scans the pattern from right to left."
+    },
+    {
+        "question": "What are the two main heuristics used by the Boyer-Moore Algorithm?",
+        "answer": "The two main heuristics are: 1) Bad Character Heuristic, which shifts the pattern based on the mismatched character, and 2) Good Suffix Heuristic, which shifts based on matching suffixes (not used in the simplified version)."
+    },
+    {
+        "question": "What is the Boyer-Moore-Horspool Algorithm?",
+        "answer": "The Boyer-Moore-Horspool Algorithm is a simplified version of the Boyer-Moore Algorithm that pre-processes the pattern to record the last occurrence of each character, helping determine the shift when a mismatch occurs."
+    },
+    {
+        "question": "What is an example of using the Boyer-Moore Algorithm?",
+        "answer": "An example is searching for the pattern 'pill' in the text 'the caterpillar'. The search starts from the rightmost character of the pattern, allowing the algorithm to skip multiple characters when mismatches occur."
+    },
+    {
+        "question": "What is the Bad Character Heuristic?",
+        "answer": "The Bad Character Heuristic shifts the pattern based on the position of the mismatched character in the pattern. It helps decide the next comparison position."
+    },
+    {
+        "question": "What happens in Case 1 of the jump steps in Boyer-Moore?",
+        "answer": "In Case 1, if the last occurrence of the mismatched text character in the pattern is before the current position, the pattern is moved so that the character at its last occurrence aligns with the mismatched character."
+    },
+    {
+        "question": "What happens in Case 2 of the jump steps in Boyer-Moore?",
+        "answer": "In Case 2, if the last occurrence of the mismatched text character in the pattern is at or after the current position, the pattern is shifted one place to the right, and matching restarts from the end of the pattern."
+    },
+    {
+        "question": "What happens in Case 3 of the jump steps in Boyer-Moore?",
+        "answer": "In Case 3, if the mismatched text character does not appear in the pattern, the pattern is moved past the mismatched character entirely."
+    },
+    {
+        "question": "What is the update rule for Case 1 in Boyer-Moore?",
+        "answer": "For Case 1: \nNew value of i = i + m - 1 - p[t[i]] \nNew value of j = m - 1"
+    },
+    {
+        "question": "What is the update rule for Case 2 in Boyer-Moore?",
+        "answer": "For Case 2: \nNew value of i = i + m - j \nNew value of j = m - 1 \nNew value of sp = sp + 1"
+    },
+    {
+        "question": "What is the update rule for Case 3 in Boyer-Moore?",
+        "answer": "For Case 3: \nNew value of i = i + m \nNew value of j = m - 1 \nNew value of sp = sp + j + 1"
+    },
+    {
+        "question": "What is the worst-case time complexity of the Boyer-Moore Algorithm?",
+        "answer": "The worst-case time complexity of the Boyer-Moore Algorithm is O(mn), where m is the length of the pattern and n is the length of the text."
+    },
+    {
+        "question": "Give an example where the Boyer-Moore Algorithm has a worst-case time complexity.",
+        "answer": "An example of the worst-case scenario is searching for the pattern 'ba...aa' in the text 'aa...aaaa'. In this case, many character comparisons may be needed at each position."
+    },
+    {
+        "question": "What is the average-case time complexity of the Boyer-Moore Algorithm?",
+        "answer": "The average-case time complexity of the Boyer-Moore Algorithm is typically much faster than O(mn), as the algorithm often skips many characters based on mismatches."
+    },
+    {
+        "question": "What is the time complexity of the extended version of the Boyer-Moore Algorithm?",
+        "answer": "The extended version of the Boyer-Moore Algorithm can achieve linear time complexity, O(m + n)."
+    },
+    {
+        "question": "Why is the Boyer-Moore Algorithm efficient in practical cases?",
+        "answer": "The Boyer-Moore Algorithm is efficient because it skips large portions of the text by making decisions based on mismatches using pre-processed pattern information."
+    },
+    {
+        "question": "What is the key to understanding the Boyer-Moore Algorithm rather than memorising the rules?",
+        "answer": "The key to understanding the Boyer-Moore Algorithm is to grasp the motivation behind the shifts and why certain characters are skipped, rather than simply memorising specific rules."
+    },
+    {
+        "question": "What is the main idea behind NP-complete problems?",
+        "answer": "NP-complete problems are a special category of difficult problems. If one NP-complete problem can be solved in polynomial time, then all NP-complete problems can be solved in polynomial time."
+    },
+    {
+        "question": "What is the significance of the question P = NP?",
+        "answer": "The question of whether P = NP is one of the most important unsolved problems in computer science. It asks if every problem whose solution can be verified in polynomial time can also be solved in polynomial time."
+    },
+    {
+        "question": "What is the difference between polynomial-time and exponential-time algorithms?",
+        "answer": "Polynomial-time algorithms are considered efficient and have a time complexity of O(n^c) for some constant c. Exponential-time algorithms, such as O(2^n) or O(n!), grow much faster and become impractical for large inputs."
+    },
+    {
+        "question": "Give examples of problems that can be solved in polynomial time.",
+        "answer": "Examples of polynomial-time problems include: searching a sorted list (O(log n)), finding the maximum value (O(n)), sorting (O(n log n)), and finding the shortest path in a graph (O(n^2))."
+    },
+    {
+        "question": "What is the Eulerian Cycle Problem?",
+        "answer": "The Eulerian Cycle Problem asks if a graph can be traversed so that each edge is visited exactly once. A solution exists if all vertices have an even degree, and it is solvable in polynomial time O(n^2)."
+    },
+    {
+        "question": "What is the Hamiltonian Cycle Problem?",
+        "answer": "The Hamiltonian Cycle Problem asks if a graph can be traversed so that each vertex is visited exactly once. There is no known polynomial-time solution, and the brute-force approach has factorial time complexity O(n^2 n!)."
+    },
+    {
+        "question": "What is the Class P?",
+        "answer": "The Class P consists of problems that can be solved in polynomial time. Examples include path finding, checking if a graph is connected, and text searching."
+    },
+    {
+        "question": "What is the Class NP?",
+        "answer": "The Class NP consists of problems for which a solution can be verified in polynomial time. Non-deterministic algorithms can 'guess' solutions and verify them quickly."
+    },
+    {
+        "question": "What does it mean for a problem to be NP-complete?",
+        "answer": "A problem is NP-complete if: 1) It belongs to NP. 2) Every other problem in NP can be reduced to it in polynomial time."
+    },
+    {
+        "question": "Give examples of NP-complete problems.",
+        "answer": "Examples of NP-complete problems include: Hamiltonian Cycle Problem, Travelling Salesman Problem (TSP), Clique Problem, Graph Colouring Problem, and Satisfiability Problem (SAT)."
+    },
+    {
+        "question": "What is polynomial-time reduction?",
+        "answer": "A problem Π1 can be reduced to a problem Π2 if instances of Π1 can be transformed into instances of Π2 in polynomial time. If Π2 is easy (in P), then Π1 is also easy."
+    },
+    {
+        "question": "How do you prove a problem is NP-complete?",
+        "answer": "To prove a problem Π is NP-complete: 1) Show that Π belongs to NP (its solution can be verified quickly). 2) Reduce a known NP-complete problem to Π in polynomial time."
+    },
+    {
+        "question": "What is Cook's Theorem?",
+        "answer": "Cook's Theorem states that the first NP-complete problem was the Satisfiability Problem (SAT), which was proven to be NP-complete by a generic reduction from any NP problem."
+    },
+    {
+        "question": "What strategies can be used to cope with NP-complete problems?",
+        "answer": "To cope with NP-complete problems, you can: 1) Look for special cases that may be easier (e.g., 2-SAT). 2) Use better exponential-time algorithms (e.g., backtracking). 3) Use approximation algorithms. 4) Use heuristics or probabilistic algorithms for practical solutions."
+    },
+    {
+        "question": "What is an example of a practical reduction from SAT to another problem?",
+        "answer": "An example of a practical reduction is converting a SAT instance to a Clique Problem. Given a SAT instance, a graph can be constructed where cliques represent satisfying assignments."
+    },
+    {
+        "question": "What is the Travelling Salesman Problem (TSP)?",
+        "answer": "The Travelling Salesman Problem (TSP) asks whether there is a tour that visits each city exactly once and returns to the starting point, with the total distance travelled being minimal. It is an NP-complete problem."
+    },
+    {
+        "question": "What is the Clique Problem?",
+        "answer": "The Clique Problem asks whether there is a subset of vertices in a graph that are fully connected by edges. It is an NP-complete problem."
+    },
+    {
+        "question": "What is the Graph Colouring Problem?",
+        "answer": "The Graph Colouring Problem asks whether a graph can be coloured with K colours such that no two adjacent vertices share the same colour. It is an NP-complete problem."
+    },
+    {
+        "question": "What is the Satisfiability Problem (SAT)?",
+        "answer": "The Satisfiability Problem (SAT) asks whether a Boolean expression can be made true by assigning appropriate values to its variables. It was the first problem proven to be NP-complete."
+    },
+    {
+        "question": "What is the key question in the study of NP-complete problems?",
+        "answer": "The key question is whether P = NP, which asks if every problem whose solution can be verified in polynomial time can also be solved in polynomial time."
     }
 ]
