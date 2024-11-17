@@ -338,5 +338,173 @@
     {
         "question": "What is the benefit of using standardised questionnaires like SUS or NASA TLX?",
         "answer": "Standardised questionnaires are widely tested and validated, providing reliable and comparable data across different studies, eliminating the need to reinvent survey questions."
+    },
+    {
+        "question": "What are two of the most important characteristics of good design?",
+        "answer": "Discoverability and understanding are key characteristics of good design."
+    },
+    {
+        "question": "What does 'discoverability' in design mean?",
+        "answer": "Discoverability is the ability to figure out what actions are possible and how to perform them."
+    },
+    {
+        "question": "What is meant by 'understanding' in the context of design?",
+        "answer": "Understanding refers to how well users can interpret a product's features and controls, knowing what each element does and how to use it."
+    },
+    {
+        "question": "What is the main purpose of good design?",
+        "answer": "The main purpose of good design is to create products that are understandable, functional, and enjoyable, effectively fulfilling users' needs."
+    },
+    {
+        "question": "What is the difference between industrial design, interaction design, and experience design?",
+        "answer": "Industrial design focuses on the physical form and functionality, interaction design emphasises ease of use, and experience design concentrates on overall user satisfaction."
+    },
+    {
+        "question": "Why is human-centred design (HCD) important?",
+        "answer": "Human-centred design prioritises human needs and behaviours, resulting in products that are intuitive, easier to use, and better suited to users."
+    },
+    {
+        "question": "Why might even simple devices become confusing for users?",
+        "answer": "Simple devices can be confusing if they have too many features or controls, making it hard for users to understand their functionality."
+    },
+    {
+        "question": "What common mistake do designers make when creating products?",
+        "answer": "Designers often assume that users will behave logically, ignoring the natural complexity of human behaviour."
+    },
+    {
+        "question": "How does good design help when something goes wrong?",
+        "answer": "Good design anticipates problems and provides clear feedback, helping users understand what is happening and how to fix issues."
+    },
+    {
+        "question": "Why is it problematic for products to require precise user actions?",
+        "answer": "People are not always precise or consistent, so products that require exact actions can easily lead to errors and frustration."
+    },
+    {
+        "question": "What should designers focus on when creating products for people?",
+        "answer": "Designers should focus on real user behaviours and needs, considering how people naturally act and make mistakes."
+    },
+    {
+        "question": "Why can designing for human needs be challenging in industry?",
+        "answer": "Designing for human needs can be challenging due to constraints like limited time, budgets, and balancing technical requirements with user-friendly design."
+    },
+    {
+        "question": "What role does feedback play in good design?",
+        "answer": "Feedback helps users understand the actions taken, the product's current state, and what to do next, reducing confusion and errors."
+    },
+    {
+        "question": "Why is it important for designers to avoid making assumptions about user behaviour?",
+        "answer": "People do not always behave predictably, so designing based on assumptions can result in confusing and frustrating products."
+    },
+    {
+        "question": "What does it mean to design for error?",
+        "answer": "Designing for error means creating products that anticipate user mistakes and provide ways to prevent or easily correct them."
+    },
+    {
+        "question": "What is a 'lock-in' in design, and why is it used?",
+        "answer": "A lock-in is a feature that prevents a process from being stopped prematurely, ensuring necessary actions are completed, like saving work before exiting."
+    },
+    {
+        "question": "What is a 'lockout,' and what purpose does it serve in design?",
+        "answer": "A lockout prevents access to dangerous areas or actions, ensuring safety by restricting entry or preventing certain events."
+    },
+    {
+        "question": "How do forcing functions help users?",
+        "answer": "Forcing functions guide user behaviour by making certain actions mandatory before others, preventing mistakes and ensuring tasks are done correctly."
+    },
+    {
+        "question": "What is the potential downside of using forcing functions?",
+        "answer": "Forcing functions can be inconvenient, leading users to bypass or disable them, which may reduce their intended safety benefits."
+    },
+    {
+        "question": "What are affordances in the context of design?",
+        "answer": "Affordances are qualities of an object that suggest possible actions, like a handle suggesting it can be pulled."
+    },
+    {
+        "question": "What is the difference between perceived affordances and signifiers?",
+        "answer": "Perceived affordances are what users believe they can do with an object, while signifiers are cues that help users understand how to interact with it."
+    },
+    {
+        "question": "How do cultural conventions affect the interpretation of design elements?",
+        "answer": "Cultural conventions influence how users interpret elements based on shared cultural knowledge, like a door knob being understood as something to turn."
+    },
+    {
+        "question": "What is the role of consistency in design?",
+        "answer": "Consistency helps users transfer knowledge from one product to another, making interactions intuitive and reducing confusion."
+    },
+    {
+        "question": "Why might users resist changes in design conventions?",
+        "answer": "Users may resist changes because they are familiar with existing conventions, and learning a new system can be challenging."
+    },
+    {
+        "question": "What is a key consideration when deciding whether to change a design convention?",
+        "answer": "The key consideration is whether the new design offers significant improvement. If the benefits outweigh the difficulties, the change is justified."
+    },
+    {
+        "question": "How can design use constraints to guide user behaviour?",
+        "answer": "Constraints limit possible actions, guiding users towards correct usage and preventing errors. They can be physical, cultural, or logical."
+    },
+    {
+        "question": "What is feedback in design, and why is it important?",
+        "answer": "Feedback provides information about the action taken and its result, helping users understand the effects of their actions."
+    },
+    {
+        "question": "Why do mixed systems of design conventions often cause confusion?",
+        "answer": "Mixed systems create inconsistency, making it hard for users to know which rules to follow, leading to errors and frustration."
+    },
+    {
+        "question": "What is the benefit of using design constraints based on cultural conventions?",
+        "answer": "Design constraints based on cultural conventions make products more intuitive by aligning with shared knowledge."
+    },
+    {
+        "question": "Why should designers focus on user needs and behaviours when creating constraints and forcing functions?",
+        "answer": "Focusing on user needs ensures that constraints and forcing functions support user goals without creating unnecessary obstacles."
+    },
+    {
+        "question": "What is 'anti-affordance' in design?",
+        "answer": "Anti-affordance refers to features that prevent certain actions, guiding users away from undesired behaviours."
+    },
+    {
+        "question": "How can knowledge be stored in the world rather than in the head?",
+        "answer": "Knowledge in the world involves external cues like labels or icons that help users know what to do without needing to remember."
+    },
+    {
+        "question": "What is the trade-off between knowledge in the world and knowledge in the head?",
+        "answer": "Relying on knowledge in the head is efficient but error-prone, while knowledge in the world eases tasks but can clutter the interface. Good design balances both."
+    },
+    {
+        "question": "What are the types of constraints used in design?",
+        "answer": "The types of constraints in design include: Physical Constraints, which limit actions through physical properties (e.g., a plug that only fits one way); Cultural Constraints, which guide actions based on learned behaviours (e.g., red lights mean stop); Semantic Constraints, which use the meaning of elements to guide behaviour (e.g., a question mark icon for help); and Logical Constraints, which rely on reasoning to determine the correct action (e.g., greyed-out options that cannot be selected)."
+    },
+    {
+        "question": "What is Fitts' Law, and how does it apply to design?",
+        "answer": "Fitts' Law predicts the time required to move to a target based on its size and distance. In design, it means that larger, closer targets (like big buttons or corner icons) are easier and faster to interact with."
+    },
+    {
+        "question": "What are the design implications of Fitts' Law?",
+        "answer": "Design should position frequently used elements closer to the user's focus and make interactive targets larger to improve usability. For instance, placing important buttons at screen edges makes them easier to access."
+    },
+    {
+        "question": "What is 'social translucence' in HCI?",
+        "answer": "Social translucence refers to design features that give users awareness of others' actions and intentions in a shared environment, enhancing collaboration and communication. For example, typing indicators in a chat interface."
+    },
+    {
+        "question": "What are 'slips' and 'mistakes' in user errors?",
+        "answer": "Slips are errors where the user intends the correct action but performs it incorrectly (e.g., pressing the wrong button by accident). Mistakes occur when the user's intention is incorrect due to a misunderstanding (e.g., pulling a door that should be pushed)."
+    },
+    {
+        "question": "How can design help minimise errors?",
+        "answer": "Good design minimises errors by anticipating common mistakes, providing clear feedback, and allowing users to easily reverse actions or correct errors."
+    },
+    {
+        "question": "Why is it important to consider both ease of use and error prevention in design?",
+        "answer": "Balancing ease of use with error prevention ensures users can interact with the product smoothly without being hindered by excessive safety features, which can reduce usability."
+    },
+    {
+        "question": "What is the issue with mixed systems of design conventions?",
+        "answer": "Mixed systems create confusion because users struggle to understand which set of rules or conventions to follow, leading to inconsistent experiences and more user errors."
+    },
+    {
+        "question": "What is the benefit of binding content to screen edges or corners?",
+        "answer": "Binding content like menus or buttons to screen edges or corners helps prevent users from overshooting the target, making selection easier and quicker as these areas act as targets of infinite size in pointer-based interfaces."
     }
 ]
